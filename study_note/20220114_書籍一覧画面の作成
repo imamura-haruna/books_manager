@@ -1,0 +1,8 @@
+□Routingの設定⚠︎laravel8からの仕様
+①”use App\Http\Controllers\コントローラー名”の記述で
+Route::get('/ページ', [コントローラー名::class, 'アクション']);
+が使用できる
+②Route::get('/', 'App\Http\Controllers\コントローラー名@アクション');
+を記述する
+
+Appの記述が必要になった→記述しないとパスが通らない
